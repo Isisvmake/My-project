@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif; /* Define a fonte do corpo do texto */
+    margin: 0; /* Remove margens padrão */
+    padding: 20px; /* Adiciona espaçamento interno */
+    background-color: #f8f8f8; /* Cor de fundo */
+}
+
+header {
+    background-color: #4CAF50; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto */
+    padding: 15px; /* Espaçamento interno do cabeçalho */
+    text-align: center; /* Centraliza o texto */
+}
+
+footer {
+    margin-top: 20px; /* Espaçamento acima do rodapé */
+    text-align: center; /* Centraliza o texto do rodapé */
+    font-size: small; /* Tamanho da fonte do rodapé */
+}
