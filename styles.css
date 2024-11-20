@@ -1,0 +1,53 @@
+/* Resetando margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+header {
+    background-color: #FFCAE4;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #000;
+}
+
+.produtos {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: center;
+}
+
+.produto {
+    background-color: #FFCAE4;
+    padding: 10px;
+    border-radius: 8px;
+    width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.produto p {
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #FFCAE4;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
