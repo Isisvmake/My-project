@@ -1,19 +1,96 @@
+/* Resetando margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif; /* Define a fonte do corpo do texto */
-    margin: 0; /* Remove margens padrão */
-    padding: 20px; /* Adiciona espaçamento interno */
-    background-color: #f8f8f8; /* Cor de fundo */
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
 }
 
 header {
-    background-color: #4CAF50; /* Cor de fundo do cabeçalho */
-    color: white; /* Cor do texto */
-    padding: 15px; /* Espaçamento interno do cabeçalho */
-    text-align: center; /* Centraliza o texto */
+    background-color: #FFCAE4;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    color: #000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-media {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.social-media a img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.produtos {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: center;
+}
+
+.produto {
+    background-color: #FFCAE4;
+    padding: 10px;
+    border-radius: 8px;
+    width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.produto p {
+    margin-top: 10px;
+}
+
+button {
+    background-color: #FFCAE4;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #fbb6d3;
+}
+
+.carrinho {
+    text-align: center;
+    margin-top: 20px;
 }
 
 footer {
-    margin-top: 20px; /* Espaçamento acima do rodapé */
-    text-align: center; /* Centraliza o texto do rodapé */
-    font-size: small; /* Tamanho da fonte do rodapé */
+    background-color: #FFCAE4;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
 }
