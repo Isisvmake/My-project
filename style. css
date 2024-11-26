@@ -1,96 +1,72 @@
-/* Resetando margens e paddings */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Estilo Geral */
 body {
     font-family: Arial, sans-serif;
-    background-color: white;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
     color: #333;
 }
 
-header {
-    background-color: #FFCAE4;
+/* Container do Login */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
     padding: 20px;
-    text-align: center;
-    position: relative;
-}
-
-header h1 {
-    color: #000;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
-}
-
-nav ul li a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.social-media {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-}
-
-.social-media a img {
-    width: 30px;
-    margin-left: 10px;
-}
-
-.produtos {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    text-align: center;
-}
-
-.produto {
-    background-color: #FFCAE4;
-    padding: 10px;
-    border-radius: 8px;
-    width: 150px;
+    border: 2px solid #FFCAE4;
+    border-radius: 10px;
+    background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-.produto img {
-    width: 100%;
-    border-radius: 8px;
+/* Título */
+.login-container h1 {
+    font-size: 24px;
+    color: #FFCAE4;
+    margin-bottom: 20px;
 }
 
-.produto p {
-    margin-top: 10px;
+/* Formulário */
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-button {
-    background-color: #FFCAE4;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    margin-top: 10px;
+/* Labels */
+.login-container label {
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Inputs */
+.login-container input {
+    padding: 10px;
+    border: 1px solid #FFCAE4;
     border-radius: 5px;
+    font-size: 14px;
 }
 
-button:hover {
+/* Botão */
+.login-container button {
+    background-color: #FFCAE4;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-container button:hover {
     background-color: #fbb6d3;
 }
 
-.carrinho {
-    text-align: center;
-    margin-top: 20px;
-}
-
-footer {
-    background-color: #FFCAE4;
-    padding: 10px;
-    text-align: center;
-    margin-top: 20px;
-}
+/* Link de Cadastro */
+.login-container p a {
+    color: #FFCAE4;
+    text-decoration: none;
