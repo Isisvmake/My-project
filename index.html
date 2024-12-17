@@ -3,62 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Loja</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>IsisvMake - Loja Online</title>
+    <!-- Link da fonte Caldina -->
+    <link href="https://fonts.googleapis.com/css2?family=Caldina:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Configurando a fonte Caldina */
+        body {
+            font-family: 'Caldina', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4c2c2;
+            color: #fff;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        #produtos {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .produto {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 10px;
+            width: 200px;
+            text-align: center;
+        }
+
+        button {
+            background-color: #ff6f61;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e65c54;
+        }
+    </style>
 </head>
 <body>
-    <!-- Cabeçalho -->
     <header>
-        <div class="logo">
-            <h1>Minha Loja</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Produtos</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-        <div class="social-media">
-            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Facebook_icon.svg" alt="Facebook"></a>
-            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Instagram_icon.png" alt="Instagram"></a>
-            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Twitter-logo.svg" alt="Twitter"></a>
-        </div>
+        <h1>Bem-vindo à IsisvMake</h1>
+        <p>Maquiagem e cosméticos para todas as ocasiões.</p>
     </header>
-    
-    <!-- Seção de Produtos -->
-    <section class="produtos">
-        <h2>Produtos em Destaque</h2>
-        <div class="produto">
-            <img src="https://via.placeholder.com/150" alt="Produto 1">
-            <p>Produto 1</p>
-            <p>R$ 30,00</p>
-            <button>Adicionar ao Carrinho</button>
-        </div>
-        <div class="produto">
-            <img src="https://via.placeholder.com/150" alt="Produto 2">
-            <p>Produto 2</p>
-            <p>R$ 45,00</p>
-            <button>Adicionar ao Carrinho</button>
-        </div>
-        <div class="produto">
-            <img src="https://via.placeholder.com/150" alt="Produto 3">
-            <p>Produto 3</p>
-            <p>R$ 60,00</p>
-            <button>Adicionar ao Carrinho</button>
-        </div>
-    </section>
-    
-    <!-- Carrinho de Compras -->
-    <div class="carrinho">
-        <a href="#">Carrinho (0 itens)</a>
-    </div>
-    
-    <!-- Informações sobre Frete -->
+    <main>
+        <section id="produtos">
+            <h2>Nossos Produtos</h2>
+            <div class="produto">
+                <h3>Kit de Maquiagem</h3>
+                <p>Inclui batom, rímel, paleta de cores e mais!</p>
+                <p><strong>R$ 70,00</strong></p>
+                <button>Comprar</button>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>Frete grátis para compras acima de R$ 200!</p>
-        <p>&copy; 2024 Minha Loja. Todos os direitos reservados.</p>
+        <p>© 2024 IsisvMake - Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
