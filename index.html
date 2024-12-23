@@ -1,80 +1,109 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IsisvMake - Loja Online</title>
-    <!-- Link da fonte Caldina -->
-    <link href="https://fonts.googleapis.com/css2?family=Caldina:wght@400;700&display=swap" rel="stylesheet">
+    <title>ISISVMAKE</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Configurando a fonte Caldina */
-        body {
-            font-family: 'Caldina', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-            color: #333;
-        }
-
-        header {
-            text-align: center;
-            padding: 20px;
-            background-color: #f4c2c2;
-            color: #fff;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        #produtos {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        .produto {
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 16px;
-            margin: 10px;
-            width: 200px;
-            text-align: center;
-        }
-
-        button {
-            background-color: #ff6f61;
-            color: #fff;
-            border: none;
-            padding: 10px;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #e65c54;
-        }
-    </style>
 </head>
 <body>
+
     <header>
-        <h1>Bem-vindo à IsisvMake</h1>
-        <p>Maquiagem e cosméticos para todas as ocasiões.</p>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#maquiagem">Maquiagem</a></li>
+                <li><a href="#skincare">Skin Care</a></li>
+                <li><a href="#acessorios">Acessórios</a></li>
+                <li><a href="#cabelos">Cabelos</a></li>
+                <li><a href="#corpo">Corpo</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <section class="banner">
+        <h1>Bem-vindo a ISISVMAKE!</h1>
+        <p>Encontre os melhores produtos para sua beleza</p>
+    </section>
+
     <main>
-        <section id="produtos">
-            <h2>Nossos Produtos</h2>
-            <div class="produto">
-                <h3>Kit de Maquiagem</h3>
-                <p>Inclui batom, rímel, paleta de cores e mais!</p>
-                <p><strong>R$ 70,00</strong></p>
-                <button>Comprar</button>
+        <!-- Seção de categorias -->
+        <section id="maquiagem" class="categoria">
+            <h2>Maquiagem</h2>
+            <div class="produtos">
+                <!-- Produto 1 -->
+                <div class="produto">
+                    <img src="assets/images/produto1.jpg" alt="Produto 1">
+                    <p>Base de Alta Cobertura</p>
+                    <span>R$ 99,90</span>
+                    <button>Comprar</button>
+                </div>
+                <!-- Produto 2 -->
+                <div class="produto">
+                    <img src="assets/images/produto2.jpg" alt="Produto 2">
+                    <p>Batons Matte</p>
+                    <span>R$ 39,90</span>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="skincare" class="categoria">
+            <h2>Skin Care</h2>
+            <div class="produtos">
+                <!-- Produto 1 -->
+                <div class="produto">
+                    <img src="assets/images/produto3.jpg" alt="Produto 3">
+                    <p>Creme Hidratante</p>
+                    <span>R$ 49,90</span>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="acessorios" class="categoria">
+            <h2>Acessórios</h2>
+            <div class="produtos">
+                <!-- Produto 1 -->
+                <div class="produto">
+                    <img src="assets/images/produto4.jpg" alt="Produto 4">
+                    <p>Pincéis Profissionais</p>
+                    <span>R$ 79,90</span>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="cabelos" class="categoria">
+            <h2>Cabelos</h2>
+            <div class="produtos">
+                <!-- Produto 1 -->
+                <div class="produto">
+                    <img src="assets/images/produto5.jpg" alt="Produto 5">
+                    <p>Shampoo Reconstrutor</p>
+                    <span>R$ 59,90</span>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="corpo" class="categoria">
+            <h2>Corpo</h2>
+            <div class="produtos">
+                <!-- Produto 1 -->
+                <div class="produto">
+                    <img src="assets/images/produto6.jpg" alt="Produto 6">
+                    <p>Óleo Corporal</p>
+                    <span>R$ 29,90</span>
+                    <button>Comprar</button>
+                </div>
             </div>
         </section>
     </main>
+
     <footer>
-        <p>© 2024 IsisvMake - Todos os direitos reservados.</p>
+        <p>&copy; 2024 ISISVMAKE. Todos os direitos reservados.</p>
     </footer>
+
 </body>
 </html>
